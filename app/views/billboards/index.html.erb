@@ -1,0 +1,9 @@
+<h1>Billboards</h1>
+
+<ul>
+<% @billboards.each do |billboard| %>
+  <%= link_to billboard.music, billboard%>
+  <% end %>
+</ul>
+
+  <%= link_to 'Create a new billboard', new_billboard_path %> 
