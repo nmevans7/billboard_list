@@ -1,12 +1,15 @@
 <h1>Click on an Artist to view Songs</h1>
-<%= link_to 'Create a new Artist', new_billboard_artist_path(@billboard) %>
+
 <ul>
   <% @artists.each do |artist| %>
     <li>
     <%= link_to artist.name, [@billboard, artist] %>
+    <div></div>
     </li>
     <%end %>
     </ul>
-
+  <%= link_to 'Create a new Artist', new_billboard_artist_path(@billboard) %>
+  <div></div>
+  <%= link_to 'Show all Billboards', billboards_path %>
    
    

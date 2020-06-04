@@ -21,6 +21,7 @@ class ArtistsController < ApplicationController
   def create
     @artist = @billboard.artists.new(artist_params)
     if @artist.save
+      # redirect_to billboard_artists_path[@billboard]
       redirect_to [@billboard, @artist]
     else
       render :new
